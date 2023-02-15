@@ -4,6 +4,9 @@ Rohweder
 2-15-2023
 
 #Purpose
+
+This is a repo for csc134 to demonstrate:
+
 - markdown
 - source control
 - version control
