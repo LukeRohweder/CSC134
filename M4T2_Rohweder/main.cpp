@@ -3,6 +3,8 @@
 //2-27-2023
 //M4T2
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -23,27 +25,31 @@ void option_one(){
 }
 
 void option_two(){
-    cout << "Using while to add numbers" << endl;
-
+    //dice roller
+    int first, second, third; // 3 dice
+    int total;
+    int seed;
 }
 
 
 void option_three(){
-    cout << "This is still in development...sorry" << endl;
+    //sum and average of dice
 }
 
+
+//There is no option 4 function, It's just quit.
 
 int main()
 {
     cout << "Welcome to the Menu" << endl;
     cout << "Press 1 to count" << endl;
-    cout << "Press 2 to sum up numbers" << endl;
-    cout << "Press 3 to TODO" << endl;
+    cout << "Press 2 to roll dice" << endl;
+    cout << "Press 3 to roll a character" << endl;
     cout << "Choice: ";
     int choice;
     cin >> choice;
-    while (choice < 1 || choice > 3){
-        cout << "Please choose 1, 2, or 3: ";
+    while (choice < 1 || choice > 4){
+        cout << "Please choose 1, 2, 3, or 4: ";
         cin >> choice;
     }
     if (choice == 1){
