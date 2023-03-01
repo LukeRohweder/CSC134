@@ -28,14 +28,20 @@ void option_two(){
     //dice roller
     int first, second, third; // 3 dice
     int total;
-    int seed;
+    int seed = time(0);
+    srand(seed);
+    first = (rand() % 6) + 1;
+    second = (rand() % 6) + 1;
+    third = (rand() % 6) + 1;
+    total = first + second + third;
+    cout << "Rolling three dice: " << endl;
+    cout << first << " + " << second << " + " << third << " = " << total << endl;
 }
 
 
 void option_three(){
     //sum and average of dice
 }
-
 
 //There is no option 4 function, It's just quit.
 
@@ -55,6 +61,16 @@ int main()
     if (choice == 1){
         option_one();
     }
+    if (choice == 2){
+        option_two();
+    }
+    if (choice == 3){
+        option_three();
+    }
+    if (choice == 4){
+        cout << "Quitting time!";
+    }
+
 
 
 
