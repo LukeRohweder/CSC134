@@ -24,7 +24,9 @@ void option_one(){
 
 void option_two(){
     cout << "Using while to add numbers" << endl;
+
 }
+
 
 void option_three(){
     cout << "This is still in development...sorry" << endl;
